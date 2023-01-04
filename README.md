@@ -1,0 +1,1 @@
+This repository just has the static HTML pages for my landing page. The resume portion is generated from Markdown using Pandoc.

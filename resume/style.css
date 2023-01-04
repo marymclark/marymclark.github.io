@@ -1,0 +1,178 @@
+/* Hide the metadata header. */
+header {
+	display: none;
+}
+
+/* Set the page dimensions and print-specific styling for Weasyprint */
+@page {   
+	size: Letter; /* Default size is A4 */   
+	margin: 0cm;
+	padding: 0cm;
+}
+
+@media print {     
+	body {         
+		font-size: 12px;
+		padding: 10px;
+		margin: 0px;
+		max-width: 100%;
+	}
+
+	span, blockquote {
+		font-size: 10px !important;
+	}
+
+	#website {
+		display: initial !important;
+	}
+
+	#email:before {
+		display: none;
+	}
+
+	#linkedin:before {
+		font-size: 9px !important;
+	}
+
+	/* Add .hide-in-pdf class to list items that should be kept in the HTML, but can be hidden in the PDF */
+	.hide-in-pdf, li:has(> .hide-in-pdf) {
+		display: none;
+	}
+	
+	/* Hide these positions that are less relevant */
+	h3#student-aide, h3#student-aide + p, h3#student-aide + p + ul {
+		display: none;
+	}
+
+	h3#intern-co-coordinator, h3#intern-co-coordinator + p, h3#intern-co-coordinator + p + ul {
+		display: none;
+	}
+	
+	/* Hide the footer bar in the PDF (unfortunately can't add .hide-in-pdf to hr in markdown). */
+	hr:last-of-type {
+		display: none;
+	}
+}
+
+/* Base formatting for the document. */
+body {
+	font-family: georgia, serif;
+	padding: 40px;
+	max-width: 900px;
+	margin: auto;
+	color: #262626;
+}
+
+a, strong {
+	color: #82af96;
+}
+
+h1, h2, h3, h4 {
+	color: #82af96;
+	margin-left: 10px;
+}
+
+hr {
+	border: 2px solid #82af96;
+}
+
+h3, h2#skills {
+	margin-bottom: 5px;
+}
+
+/* Format the top of the document to have my name on the left and contact info on the right. */
+h1 {
+	display: inline;
+	font-size: 45px;
+}
+
+h1 + ul {
+	list-style: none;
+	margin: 0px 10px;
+	padding: 0px;
+	float: right;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	color: #82af96;
+}
+
+blockquote {
+	margin: 20px 10px;
+	font-style: italic;
+	font-size: 14px;
+	text-align: center;
+}
+
+#email:before {
+	content: "\002709";
+	margin-right: 5px;
+	font-size: 13px;
+}
+
+#linkedin:before {
+	content: "in";
+	font-family: verdana, sans-serif;
+	font-weight: 900;
+	background-color: #82af96;
+	color: white;
+	padding: 0px 2px 0px 2px;
+	margin-right: 5px;
+	border-radius: 2px;
+	font-size: 11px;
+}
+
+#website {
+	display: none;
+}
+
+/* Work/Education Experience Blocks */
+h2 + ul, li > ul {
+	padding-left: 30px;
+	margin: 0px;
+}
+
+p + ul {
+	margin: 10px 0px 10px 18%;
+}
+
+h3 {
+	display: inline;
+}
+
+h3 + p {
+	display: inline;
+}
+
+span.date, span.org, span.city {
+	font-style: italic;
+	font-size: 14px;
+	margin-top: 2px;
+}
+
+span.date {
+	float: left;
+	clear: left;
+	width: 18%;
+	margin-left: 10px;
+}
+
+span.city:before {
+	content: "\0022C4";
+	padding-right: 10px;
+}
+
+span.city, span.org {
+	float: right;
+	margin-left: 10px;
+}
+
+/* Skills Section */
+h2#skills + ul {
+	list-style: none;
+}
+
+/* Footer */
+hr:last-of-type {
+	margin-top: 20px;
+}

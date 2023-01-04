@@ -1,0 +1,55 @@
+body {
+    background-color: #82af96;
+    color: white;
+    font-family: georgia, serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+img#me {
+    height: 20vh;
+    display: inline;
+    transform: rotate(10deg);
+}
+
+h1 {
+    font-size: 14vh;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 3vh;
+    margin: 0;
+    padding: 0;
+    width: 70vw;
+    line-height: 5vh;
+}
+
+a {
+    background-color: #fcedab;
+    color: #82af96;
+    text-decoration: none;
+    transition: .2s;
+}
+
+a:hover {
+    opacity: .5;
+    transition: .2s;
+}
