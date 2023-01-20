@@ -1,7 +1,7 @@
 body {
     background-color: #82af96;
     color: white;
-    font-family: georgia, serif;
+    font-family: Lora, georgia, serif;
     margin: 0;
     padding: 0;
 }
@@ -68,4 +68,9 @@ a:hover {
         transform: translateY(2vh);
     }
     100% { opacity: 1; }
+}
+
+@font-face {
+    font-family: Lora;
+    src: url(fonts/Lora-VariableFont_wght.ttf)
 }
