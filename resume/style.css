@@ -40,7 +40,7 @@ header {
 	}
 	
 	/* Hide these positions that are less relevant */
-	h3#student-aide, h3#student-aide + p, h3#student-aide + p + ul {
+	h3#student-developer, h3#student-developer + p, h3#student-developer + p + ul {
 		display: none;
 	}
 
