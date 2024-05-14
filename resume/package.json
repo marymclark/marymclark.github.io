@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "showdown": "^2.1.0"
-  },
-  "scripts": {
-    "html-to-md": "echo 'TODO'",
-    "md-to-pdf": "echo 'TODO'"
-  }
-}
