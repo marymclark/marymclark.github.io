@@ -1,6 +1,6 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-  <!-- Will eventually update this to not use the Pandoc generated HTML. Looks messy right now! -->
+<!-- This is just static HTML written by hand. Yes, I knowww, but it's just one page -->
+<html lang="en">
   <head>
     <script
       async
@@ -16,145 +16,135 @@
     </script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
     <meta charset="utf-8" />
-    <meta name="generator" content="pandoc" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=yes"
-    />
-    <meta name="author" content="Mary Clark" />
-    <title>Mary Clark Resume</title>
-    <style type="text/css">
-      code {
-        white-space: pre-wrap;
-      }
-      span.smallcaps {
-        font-variant: small-caps;
-      }
-      span.underline {
-        text-decoration: underline;
-      }
-      div.column {
-        display: inline-block;
-        vertical-align: top;
-        width: 50%;
-      }
-    </style>
+    <title>Mary Clark - Resume</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header id="title-block-header">
-      <h1 class="title">Mary Clark Resume</h1>
-      <p class="author">Mary Clark</p>
-      <p class="date">Last Updated 11/17/2022</p>
-    </header>
-    <h1 id="mary-clark">Mary Clark</h1>
-    <ul>
-      <li><span id="location">Washington D.C. Metro Area</span></li>
-      <li>
-        <span id="email"
-          ><a href="mailto:me@maryclark.net">me@maryclark.net</a></span
-        >
-      </li>
-      <li>
-        <span id="linkedin"
-          ><a href="https://www.linkedin.com/in/mary-m-clark"
-            >/in/mary-m-clark</a
-          ></span
-        >
-      </li>
-      <li>
-        <span id="website"
-          ><a href="http://maryclark.net/resume">maryclark.net/resume</a></span
-        >
-      </li>
-    </ul>
-    <blockquote>
-      <p class="hide-in-pdf">
-        Software engineer with over 7 years of experience in API development,
-        full stack development, and data ETL. Strongest in Python back-end
-        development, experienced with fast-paced development teams, and
-        interested in tackling problems that require understanding language
-        internals and building a depth of knowledge of the system and its stack.
-      </p>
-    </blockquote>
-    <hr />
-    <h2 id="experience">Experience</h2>
-    <h3 id="senior-backend-engineer">Senior Backend Engineer</h3>
-    <p>
+
+  <h1 id="name">Mary Clark</h1>
+
+  <ul id="contact">
+    <li id="location">Washington D.C.</li>
+    <li id="email"><a href="mailto:me@maryclark.net">me@maryclark.net</a></li>
+    <li id="linkedin">
+      <a href="https://www.linkedin.com/in/mary-m-clark">/in/mary-m-clark</a>
+    </li>
+    <li id="resume">
+      <a href="http://maryclark.net/resume">maryclark.net/resume</a>
+    </li>
+  </ul>
+
+  <blockquote>
+    Full stack software engineer with 7 years of experience.
+  </blockquote>
+
+  <div id="experience">
+    <h2>Experience</h2>
+
+    <h3 id="cloverly">Senior Software Engineer</h3>
+    <div class="experience-meta">
       <span class="date">Apr 2023 – Present</span>
       <span class="city">Remote</span>
       <span class="org"><a href="https://www.cloverly.com">Cloverly</a></span>
-    </p>
-    <ul>
-      <li><i>(Nothing here yet!)</i></li>
-    </ul>
-    <h3 id="senior-software-systems-engineer">
-      Senior Software Systems Engineer
-    </h3>
-    <p>
-      <span class="date">Apr 2022 – March 2023</span>
-      <span class="city">McLean, VA</span>
-      <span class="org"><a href="https://www.mitre.org">MITRE</a></span>
-    </p>
+    </div>
     <ul>
       <li>
-        Created a modular Python library for creating data analysis pipelines,
-        based on MATLAB prototypes developed by another team member.
+        Designed and implemented REST API capabilities for Catalyst, Cloverly's
+        new platform for carbon credit suppliers to manage their inventory, on a
+        fast-paced Agile team.
         <ul>
           <li>
-            Designed the library to be extensible, with interfaces and abstract
-            classes to represent recurring patterns in the prototype steps, to
-            accommodate rapidly changing requirements.
+            Successfully delivered a suite of back-end capabilities for
+            Catalyst's first paid client on an extremely rapid 2 week
+            turnaround.
           </li>
           <li>
-            Integrated the library as a service for an existing Django
-            application.
+            Worked closely with engineering team, product lead, and design lead
+            to align back-end capabilities with UI features.
           </li>
         </ul>
       </li>
       <li>
-        Built data ingest tools for multiple data ETL efforts which extracted up
-        to millions of records from sources and transformed them to fit a
-        standardized format for analysis. Utilized Python libraries such as
-        Pydantic, Boto3, Requests, and Beautiful Soup.
+        Deployed applications to AWS ECS using GitLab CI/CD; monitored
+        application performance with Sentry.
+      </li>
+      <li>
+        Teamed up with design lead to create an internal Retool app during a
+        3-day hackathon for generating Google Slides presentations from internal
+        inventory data.
       </li>
     </ul>
-    <h3 id="intern-co-coordinator">Intern Coordinator</h3>
-    <p>
-      <span class="date">Oct 2021 – March 2023</span>
+
+    <h3 id="mitre-3">Senior Software Systems Engineer</h3>
+    <div class="experience-meta">
+      <span class="date">Apr 2022 – March 2023</span>
       <span class="city">McLean, VA</span>
       <span class="org"><a href="https://www.mitre.org">MITRE</a></span>
-    </p>
+    </div>
     <ul>
       <li>
-        Interviewed intern candidates, matched incoming interns with available
-        tasking, and advised interns during their internships.
+        Designed and built data ingest tools for multiple datasets to extract up
+        to millions of records and transform them for a data warehouse.
+        <ul>
+          <li>
+            Extracted data from remote ingest sources such as Snowflake and AWS
+            S3 buckets.
+          </li>
+          <li>
+            Collaborated with data analysts upstream for review and feedback on
+            the data transformation output.
+          </li>
+        </ul>
       </li>
       <li>
-        Managed 7 interns alongside another department intern coordinator.
+        Designed and developed a modular Python library for creating data
+        analysis pipelines, based on an existing MATLAB prototype.
+        <ul>
+          <li>
+            Created a microservice for the library to integrate with an existing
+            Django application.
+          </li>
+        </ul>
       </li>
     </ul>
-    <h3 id="software-systems-engineer">Software Systems Engineer</h3>
-    <p>
+
+    <div class="hide-in-pdf">
+      <h3 id="mitre-2">Intern Coordinator</h3>
+      <div class="experience-meta">
+        <span class="date">Oct 2021 – March 2023</span>
+        <span class="city">McLean, VA</span>
+        <span class="org"><a href="https://www.mitre.org">MITRE</a></span>
+      </div>
+      <ul>
+        <li>
+          Interviewed prospective interns, matched incoming interns with
+          available tasking, and advised interns during their internships.
+        </li>
+        <li>
+          Managed 7 interns alongside another department intern coordinator.
+        </li>
+      </ul>
+    </div>
+
+    <h3 id="mitre-1">Software Systems Engineer</h3>
+    <div class="experience-meta">
       <span class="date">Aug 2019 – Apr 2022</span>
       <span class="city">McLean, VA</span>
       <span class="org"><a href="https://www.mitre.org">MITRE</a></span>
-    </p>
+    </div>
     <ul>
       <li>
-        Added tests and built new functionality for a Python REST API, and
-        developed a multi-container Docker system for deployment, with
-        additional services for Redis and JupyterHub.
+        Productionized an existing Python REST API prototype and developed a
+        multi-container Docker system for its deployment that included Redis and
+        JupyterHub.
         <ul>
           <li>
             Added the capability to interface with the system’s REST API to 2
-            external applications.
+            external applications and integrated JupyterHub with an existing
+            authentication service.
           </li>
           <li>
-            <span class="hide-in-pdf"
-              >Updated the REST API to meet new system requirements and
-              coordinated with stakeholders on version capabilities.</span
-            >
+            Deployed updates for new system requirements and coordinated with
+            stakeholders on version capabilities.
           </li>
         </ul>
       </li>
@@ -165,7 +155,7 @@
         <ul>
           <li>
             Communicated with customers after delivery to discuss setup, deliver
-            bug fixes, and describe development obstacles.
+            bug fixes, and provide documentation.
           </li>
         </ul>
       </li>
@@ -176,89 +166,71 @@
         team.
       </li>
       <li>
-        Created components for several React applications that integrated with
-        back-end Python REST APIs, and demoed components for stakeholders.
+        Created components for several React applications to demo REST API
+        capabilities.
       </li>
     </ul>
-    <h3 id="software-developer">Software Developer</h3>
-    <p>
-      <span class="date">Oct 2017 – July 2019</span>
-      <span class="city">Dahlgren, VA</span> <span class="org">U.S. Navy</span>
-    </p>
-    <ul>
-      <li>
-        <span class="hide-in-pdf"
-          >Created new features for a JavaFX application that improved analysis
-          of simulation data.</span
+
+    <div class="hide-in-pdf">
+      <h3 id="software-developer">Software Developer</h3>
+      <div class="experience-meta">
+        <span class="date">Oct 2017 – July 2019</span>
+        <span class="city">Dahlgren, VA</span>
+        <span class="org"
+          ><a
+            href="https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/"
+            >U.S. Navy</a
+          ></span
         >
-      </li>
-      <li>
-        Created features for a Java EE REST API prototype with a JSF front-end
-        and SQL database.
-      </li>
-      <li>
-        Integrated projects into a DevOps testing pipeline that included Jira,
-        Gradle, Nexus, and internal software.
-      </li>
-      <li>
-        Mentored other employees on DevOps tools and unit testing with TestNG
-        and Mockito.
-      </li>
-    </ul>
-    <h3 id="web-applications-development-intern">
-      Web Applications Development Intern
-    </h3>
-    <p>
-      <span class="date">June 2016 – Jan 2017</span>
-      <span class="city">McLean, VA</span>
-      <span class="org"><a href="https://bluestarcyber.com">Blue Star</a></span>
-    </p>
+      </div>
+      <ul>
+        <li>
+          <span class="hide-in-pdf"
+            >Created new features for a JavaFX application that improved
+            analysis of simulation data.</span
+          >
+        </li>
+        <li>
+          Created features for a Java EE REST API prototype with a JSF front-end
+          and SQL database.
+        </li>
+        <li>
+          Integrated projects into a DevOps testing pipeline that included Jira,
+          Gradle, Nexus, and internal software.
+        </li>
+        <li>
+          Mentored other employees on DevOps tools and unit testing with TestNG
+          and Mockito.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="skills">
+    <h2>Skills</h2>
     <ul>
       <li>
-        Rebuilt an internal job positions app in Ruby on Rails. Added OAuth
-        authentication and deployed on AWS Elastic Beanstalk.
+        <strong>Languages:</strong> Python, Java, JavaScript, TypeScript, HTML,
+        CSS/SASS
       </li>
       <li>
-        Transitioned the company’s external site to Jekyll to improve
-        maintainability. Made improvements to the site UI based on feedback from
-        company staff.
-      </li>
-    </ul>
-    <h3 id="student-developer">Student Developer</h3>
-    <p>
-      <span class="date">Jan 2015 – May 2017</span>
-      <span class="city">Fredericksburg, VA</span>
-      <span class="org"
-        ><a href="https://www.umw.edu"
-          >University of Mary Washington IT</a
-        ></span
-      >
-    </p>
-    <ul>
-      <li>Redesigned the university’s universal login page using SASS.</li>
-      <li>
-        Wrote SQL queries to aggregate data into reports for university staff.
-      </li>
-    </ul>
-    <h2 id="skills">Skills</h2>
-    <ul>
-      <li>
-        <strong>Languages:</strong> Python, Java, JavaScript, HTML, CSS/SASS
-      </li>
-      <li>
-        <strong>Tools and Frameworks:</strong> Flask, Git, React, Jira, Docker
+        <strong>Tools and Frameworks:</strong> FastAPI, Flask, Git, React.js,
+        Jira, Docker
       </li>
       <li><strong>Datastores:</strong> PostgreSQL, Elasticsearch, Redis</li>
     </ul>
-    <h2 id="education">Education</h2>
-    <h3 id="b.s.-in-computer-science">B.S. in Computer Science</h3>
-    <p>
+  </div>
+
+  <div id="education">
+    <h2>Education</h2>
+    <h3 id="bs-in-computer-science">B.S. in Computer Science</h3>
+    <div class="experience-meta">
       <span class="date">Aug 2013 – May 2017</span>
       <span class="city">Fredericksburg, VA</span>
       <span class="org"
         ><a href="https://www.umw.edu">University of Mary Washington</a></span
       >
-    </p>
+    </div>
     <ul>
       <li>
         Graduated Magna Cum Laude with 3.6 GPA. Minored in digital studies and
@@ -272,15 +244,10 @@
         Wi-Fi packet data during the summer of 2015. Presented results at the
         2016 Summer Simulation Multi-Conference in Montréal.
       </li>
-      <li><span class="hide-in-pdf">Member of Upsilon Pi Epsilon.</span></li>
     </ul>
-    <hr />
-    <blockquote>
-      <p>
-        <span class="hide-in-pdf"
-          ><a href="mary-clark-resume.pdf">PDF Version</a></span
-        >
-      </p>
-    </blockquote>
-  </body>
+  </div>
+
+  <div id="pdf-link" class="hide-in-pdf">
+    <a href="mary-clark-resume.pdf">PDF Version</a>
+  </div>
 </html>
