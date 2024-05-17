@@ -21,15 +21,18 @@ main {
   animation: 1.2s fadeUpAndIn;
 }
 
-@media screen and (max-width: 600px) {
-  main {
-    flex-direction: column;
-  }
-}
-
 div#image-wrapper {
   display: flex;
   width: 23vw;
+}
+
+div#mobile-image-wrapper {
+  display: none;
+}
+
+div#name-image-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 div#text-content {
@@ -119,4 +122,28 @@ a:hover {
 @font-face {
   font-family: Amiko;
   src: url(fonts/Amiko/Amiko-Regular.ttf);
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column !important;
+  }
+
+  div#text-content {
+    order: 1;
+    width: 90vw;
+  }
+
+  div#image-wrapper {
+    display: none;
+  }
+
+  div#mobile-image-wrapper {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 15vw;
+  }
 }
