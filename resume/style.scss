@@ -80,11 +80,16 @@ ul {
   padding-left: 15px;
 }
 
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #contact {
   list-style: none;
-  letter-spacing: 1px;
-  float: right;
-  font-size: 12px;
+  font-size: 50%;
   line-height: 15px;
   text-align: right;
   color: $accent-color;
