@@ -80,23 +80,6 @@ ul {
   text-align: right;
   color: #5e7f64;
 }
-#contact #email:before {
-  content: "✉";
-  margin-right: 5px;
-  font-size: 13px;
-}
-#contact #linkedin:before {
-  content: "in";
-  font-family: verdana, sans-serif;
-  font-weight: 900;
-  letter-spacing: 0px;
-  background-color: #5e7f64;
-  color: white;
-  padding: 0px 2px 0px 2px;
-  margin-right: 5px;
-  border-radius: 2px;
-  font-size: 11px;
-}
 #contact #resume {
   display: none;
 }
@@ -183,13 +166,6 @@ div.experience-meta span.org {
   }
   #resume {
     display: initial !important;
-  }
-  #email:before {
-    display: none;
-  }
-  #linkedin:before {
-    font-size: 10px !important;
-    line-height: 15px !important;
   }
   /* Add .hide-in-pdf class to hide material in the PDF resume to keep it on a single page. */
   .hide-in-pdf,
