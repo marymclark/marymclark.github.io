@@ -16,6 +16,8 @@ $off-black: #262626;
 $faded-black: color.scale($off-black, $lightness: 40%);
 $accent-color: #5e7f64;
 
+$smallest-font-size: 80%;
+
 /* Reset */
 body,
 p,
@@ -70,8 +72,7 @@ h3 {
 }
 
 blockquote {
-  font-style: italic;
-  font-size: 17px;
+  font-size: 15px;
   text-align: center;
   color: $faded-black;
 }
@@ -89,7 +90,7 @@ ul {
 
 #contact {
   list-style: none;
-  font-size: 50%;
+  font-size: $smallest-font-size;
   line-height: 15px;
   text-align: right;
   color: $accent-color;
@@ -118,6 +119,53 @@ ul {
   }
 }
 
+.section {
+  margin-top: 10px;
+}
+
+.experience-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  div,
+  h3,
+  ul,
+  li {
+    display: flex;
+  }
+
+  .experience-meta {
+    color: $faded-black;
+    font-size: $smallest-font-size;
+  }
+
+  .job-date {
+    order: 1;
+    width: 17%;
+  }
+
+  .job-title {
+    order: 2;
+    flex-grow: 35;
+  }
+
+  .job-org {
+    order: 3;
+    flex-grow: 1;
+  }
+
+  .job-divider {
+    order: 4;
+    flex-grow: 1;
+  }
+
+  .job-city {
+    order: 5;
+    flex-grow: 1;
+  }
+}
+
 /* Work/Education Experience Blocks */
 h2 + ul,
 li > ul {
@@ -126,42 +174,7 @@ li > ul {
 }
 
 div + ul {
-  margin: 10px 0px 10px 18%;
-}
-
-h3 {
-  display: inline;
-}
-
-/* Experience metadata */
-div.experience-meta {
-  color: $faded-black;
-  display: inline;
-
-  span.date,
-  span.org,
-  span.city {
-    font-size: 13px;
-    margin-top: 4px;
-  }
-
-  span.date {
-    font-style: italic;
-    float: left;
-    clear: left;
-    width: 18%;
-  }
-
-  span.city:before {
-    content: "\0022C4";
-    padding-right: 10px;
-  }
-
-  span.city,
-  span.org {
-    float: right;
-    margin-left: 10px;
-  }
+  margin: 0px 0px 10px 18%;
 }
 
 /* Skills Section */
