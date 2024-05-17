@@ -46,7 +46,8 @@ h5 {
 }
 
 h1 {
-  font-family: Montserrat-Alternates, monospace;
+  font-family: Montserrat, monospace;
+  font-weight: 300;
   display: inline;
   font-size: 400%;
 }
@@ -135,7 +136,7 @@ li > ul {
 }
 
 div + ul {
-  margin: 0px 0px 10px 18%;
+  margin: 0px 0px 10px 17%;
 }
 
 /* Skills Section */
@@ -149,12 +150,8 @@ div + ul {
 }
 
 @font-face {
-  font-family: Montserrat-Alternates;
-  src: url(../fonts/Montserrat_Alternates/MontserratAlternates-LightItalic.ttf);
-}
-@font-face {
-  font-family: Anonymous-Pro;
-  src: url(../fonts/Anonymous_Pro/AnonymousPro-Italic.ttf);
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: Amiko;

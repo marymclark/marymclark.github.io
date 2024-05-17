@@ -9,7 +9,7 @@ a little creative.
 
 @use "sass:color";
 
-$title-font: Montserrat-Alternates, monospace;
+$title-font: Montserrat, monospace;
 $regular-font: Amiko, arial, sans-serif;
 
 $off-black: #262626;
@@ -59,6 +59,7 @@ h5 {
 
 h1 {
   font-family: $title-font;
+  font-weight: 300;
   display: inline;
   font-size: 400%;
 }
@@ -174,7 +175,7 @@ li > ul {
 }
 
 div + ul {
-  margin: 0px 0px 10px 18%;
+  margin: 0px 0px 10px 17%;
 }
 
 /* Skills Section */
@@ -188,13 +189,8 @@ div + ul {
 }
 
 @font-face {
-  font-family: Montserrat-Alternates;
-  src: url(../fonts/Montserrat_Alternates/MontserratAlternates-LightItalic.ttf);
-}
-
-@font-face {
-  font-family: Anonymous-Pro;
-  src: url(../fonts/Anonymous_Pro/AnonymousPro-Italic.ttf);
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
 }
 
 @font-face {
